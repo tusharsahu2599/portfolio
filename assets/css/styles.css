@@ -10,6 +10,7 @@
 :root {
   --first-color: #4070f4;
   --second-color: #0e2431;
+  --third-color: #ffffff;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -55,11 +56,28 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: white;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
 }
+.dark-mode{
+  background-color: black;
+  color: var(--third-color);
+
+}
+
+#jobTitle{
+  animation: blinker 6s linear infinite;
+}
+
+@keyframes blinker {
+  70%{
+    opacity: .2;
+  }
+}
+
 h1,
 h2,
 p {
@@ -78,6 +96,8 @@ img {
   height: auto;
   display: block;
 }
+
+
 
 /*===== CLASS CSS ===== */
 .section-title {
